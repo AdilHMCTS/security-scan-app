@@ -1,4 +1,4 @@
-package org.example;
+package org.oozeerally.app;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -13,6 +13,8 @@ public class SecurityScanJsonGenerator {
 
 
     public static void main(String[] args) throws IOException, ParseException {
+
+        //Update below file location to reflect your files path
         JSONArray jsonArray = (JSONArray) new JSONParser().parse(new FileReader("/Users/778425/Projects/security-scan-app/src/main/resources/test.json"));
 
         System.out.println(jsonArray.size());
